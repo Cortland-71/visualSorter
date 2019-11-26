@@ -14,6 +14,8 @@ class Controller:
             self.driver.get_visual_algorithm().visual_bubble_sort(self.data)
         elif radio_selection == 1:
             self.driver.get_visual_algorithm().visual_quick_sort(self.data, 0, len(self.data)-1)
+        elif radio_selection == 2:
+            self.driver.get_visual_algorithm().visual_cocktail_sort(self.data)
         self.driver.get_visual_sort_view().set_generate_button_enabled()
 
     def start_bench_mark_button_press(self):

@@ -47,7 +47,7 @@ class VisualSortView():
     def _sort_radio(self):
         radios = {"Bubble sort": 0,
                   "Quick sort": 1,
-                  "Merge sort": 2}
+                  "Cocktail sort": 2}
         for i in radios.keys():
             self.radio = Radiobutton(self.north_pane, text=i)
             self.radio.configure(var=self.radio_button_index, value=radios[i], width=10, bg=self.north_bg, fg="gray",
