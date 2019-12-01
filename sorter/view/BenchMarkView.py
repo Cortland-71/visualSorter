@@ -13,6 +13,9 @@ class BenchMarkView:
         self.max_actual = 0
         self.bubble_time = 0
         self.quick_time = 0
+        self.cocktail_time = 0
+        self.fastest_time = 0
+        self.fastest_name = ""
 
 
         self._main_frame()
@@ -134,17 +137,17 @@ class BenchMarkView:
     def _algorithms_label(self):
         self.algorithms_label = Label(self.north_in_center_pane, text="Sorting algorithms ---\n"
                                                                       "\tBubble Sort: 00:00:00:00\n"
-                                                                      "\tQuick Sort:  00:00:00:00\n"
-                                                                      "\tMerge Sort:  00:00:00:00")
+                                                                      "\tQuick Sort:   00:00:00:00\n"
+                                                                      "\tMerge Sort:  00:00:00:00\n")
         self.algorithms_label.configure(font=f"Consolas 15 normal",
                                         bg=self.driver.get_view().get_default_bg(), fg="orange", justify=LEFT)
         self.algorithms_label.pack(side=LEFT, padx=(150, 0), pady=(100,0))
 
     def set_time_label(self):
         self.algorithms_label["text"]="Sorting algorithms ---\n"\
-                                      f"\tBubble Sort: {self.bubble_time}\n"\
-                                      f"\tQuick Sort:  {self.quick_time}\n"\
-                                      f"\tMerge Sort:  00:00:00:00"
+                                      f"\tBubble Sort:   {self.bubble_time}\n"\
+                                      f"\tQuick Sort:     {self.quick_time}\n"\
+                                      f"\tCocktail Sort: {self.cocktail_time}\n"
 
     def _south_in_center_pane(self):
         self.south_in_center_pane = PanedWindow(self.center_pane)
@@ -161,8 +164,7 @@ class BenchMarkView:
                                                                 "\tMin actual: \n"
                                                                 "\tMax set: \n"
                                                                 "\tMax actual: \n"
-                                                                "\tBest time: \n"
-                                                                "\tAlgorithm:")
+                                                                "\tBest time: \n")
         self.info_label.configure(font=f"Consolas 15 normal",
                                        bg=self.driver.get_view().get_default_bg(), fg="orange", justify=LEFT)
         self.info_label.pack(side=LEFT, padx=(150, 0), pady=(50,0))
@@ -175,8 +177,7 @@ class BenchMarkView:
             f"\tMin actual: {self.min_actual}\n"\
             f"\tMax set: {self.max_set}\n" \
             f"\tMax actual: {self.max_actual}\n"\
-            f"\tBest time: \n"\
-            f"\tAlgorithm:"
+            f"\tBest time: {self.fastest_time}\n"
 
     def set_elements(self, elements):
         self.elements = elements
@@ -197,4 +198,10 @@ class BenchMarkView:
 
     def set_quick_time(self, time):
         self.quick_time = time
+
+    def set_cocktail_time(self, time):
+        self.cocktail_time = time
+
+    def set_fastest_time(self, time):
+        self.fastest_time = time
 

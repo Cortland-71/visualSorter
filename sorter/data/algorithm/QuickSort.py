@@ -14,8 +14,10 @@ class QuickSort(Thread):
         self.driver.get_bench_mark_view().set_time_label()
         self.quick_sort(self.list, 0, len(self.list)-1)
         self.total_time = time.perf_counter() - self.time_before
+        self.driver.get_bench_mark_data().add_time(self.total_time)
         self.driver.get_bench_mark_view().set_quick_time(self.total_time)
         self.driver.get_bench_mark_view().set_time_label()
+        self.driver.get_controller().update_view()
 
 
     def quick_sort(self, data, low, high):

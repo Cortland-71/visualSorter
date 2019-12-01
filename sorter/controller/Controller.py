@@ -2,6 +2,8 @@ import random
 from tkinter import *
 from sorter.data.algorithm.BubbleSort import *
 from sorter.data.algorithm.QuickSort import *
+from sorter.data.algorithm.CocktailSort import *
+
 class Controller:
     def __init__(self, driver):
         self.driver = driver
@@ -19,9 +21,11 @@ class Controller:
         self.driver.get_visual_sort_view().set_generate_button_enabled()
 
     def start_bench_mark_button_press(self):
+        self.driver.get_bench_mark_data().clear_time_list()
         self.generate_bench_mark_data()
         BubbleSort(self.driver.get_bench_mark_data().get_working_data(), self.driver)
         QuickSort(self.driver.get_bench_mark_data().get_working_data(), self.driver)
+        CocktailSort(self.driver.get_bench_mark_data().get_working_data(), self.driver)
 
     def generate_button_press(self):
         self.driver.get_visual_sort_view().set_start_button_enabled()
@@ -53,7 +57,6 @@ class Controller:
         max_entry = self.driver.get_bench_mark_view().get_max_num_entry()
         self.driver.get_bench_mark_data().set_num_elements(num_els)
         self.driver.get_bench_mark_data().set_min_max(min_entry, max_entry)
-
         self.driver.get_bench_mark_data().generate_working_data()
 
     def update_view(self):
@@ -63,6 +66,7 @@ class Controller:
                                                    self.driver.get_bench_mark_data().get_min_actual())
         self.driver.get_bench_mark_view().set_maxs(self.driver.get_bench_mark_data().get_max_set(),
                                                    self.driver.get_bench_mark_data().get_max_actual())
+        self.driver.get_bench_mark_view().set_fastest_time(self.driver.get_bench_mark_data().get_fastest_time())
         self.driver.get_bench_mark_view().set_info_label()
 
 
