@@ -7,6 +7,7 @@ class BenchMarkData:
         self.min_actual = 0
         self.max_actual = 0
         self.working_data = []
+        self.time_list = []
 
     def set_num_elements(self, num_elements):
         try:
@@ -36,6 +37,9 @@ class BenchMarkData:
             self.min_actual = 0
             self.max_actual = 0
 
+    def set_fastest_time(self, time):
+        self.fastest_time = time
+
     def generate_working_data(self):
         self.working_data = self.driver.get_controller()\
             .generate_data(self.min_set, self.max_set, self.num_elements)
@@ -54,6 +58,15 @@ class BenchMarkData:
 
     def get_max_actual(self):
         return self.max_actual
+
+    def get_fastest_time(self):
+        return min(self.time_list)
+
+    def add_time(self, time):
+        self.time_list.append(time)
+
+    def clear_time_list(self):
+        self.time_list.clear()
 
 
 

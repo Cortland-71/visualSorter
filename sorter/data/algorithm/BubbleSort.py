@@ -13,6 +13,14 @@ class BubbleSort(Thread):
     def run(self):
         self.driver.get_bench_mark_view().set_bubble_time("Loading...")
         self.driver.get_bench_mark_view().set_time_label()
+        self.bubble_sort()
+        self.total_time = time.perf_counter() - self.time_before
+        self.driver.get_bench_mark_data().add_time(self.total_time)
+        self.driver.get_bench_mark_view().set_bubble_time(self.total_time)
+        self.driver.get_bench_mark_view().set_time_label()
+        self.driver.get_controller().update_view()
+
+    def bubble_sort(self):
         not_sorted = True
         while not_sorted:
             for i in range(len(self.unsorted_list) - 1):
@@ -23,10 +31,6 @@ class BubbleSort(Thread):
                     not_sorted = True
                     break
                 not_sorted = False
-        self.total_time = time.perf_counter() - self.time_before
-        self.driver.get_bench_mark_view().set_bubble_time(self.total_time)
-        self.driver.get_bench_mark_view().set_time_label()
-
 
 
 
