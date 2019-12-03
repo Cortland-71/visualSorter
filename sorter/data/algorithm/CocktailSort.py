@@ -22,30 +22,29 @@ class CocktailSort(Thread):
 
 
     def cocktail_sort(self, data):
-        end = len(data) -1
+        working_data = data
+        end = len(working_data) - 1
         start = 0
         swapped = True
 
-        while (swapped):
-
-            swapped = False
+        while swapped:
 
             for i in range(start, end):
-                if (data[i] > data[i + 1]):
-                    holder = data[i]
-                    data[i] = data[i + 1]
-                    data[i + 1] = holder
-                    swapped = True
+                if (working_data[i] > working_data[i + 1]):
+                    holder = working_data[i]
+                    working_data[i] = working_data[i + 1]
+                    working_data[i + 1] = holder
+            end -= 1
 
-            if (swapped == False):
-                break
             swapped = False
-            end = end - 1
 
             for i in range(end - 1, start - 1, -1):
-                if (data[i] > data[i + 1]):
-                    holder = data[i]
-                    data[i] = data[i + 1]
-                    data[i + 1] = holder
+                if (working_data[i] > working_data[i + 1]):
+                    holder = working_data[i]
+                    working_data[i] = working_data[i + 1]
+                    working_data[i + 1] = holder
                     swapped = True
-            start = start + 1
+            start += 1
+
+            if swapped == False:
+                break

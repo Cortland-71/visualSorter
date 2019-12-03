@@ -68,6 +68,8 @@ class BenchMarkData:
     def clear_time_list(self):
         self.time_list.clear()
 
+    def get_count(self):
+        return self.num_elements
 
 
 

@@ -137,7 +137,7 @@ class BenchMarkView:
     def _algorithms_label(self):
         self.algorithms_label = Label(self.north_in_center_pane, text="Sorting algorithms ---\n"
                                                                       "\tBubble Sort: 00:00:00:00\n"
-                                                                      "\tQuick Sort:   00:00:00:00\n"
+                                                                      "\tQuick Sort:  00:00:00:00\n"
                                                                       "\tMerge Sort:  00:00:00:00\n")
         self.algorithms_label.configure(font=f"Consolas 15 normal",
                                         bg=self.driver.get_view().get_default_bg(), fg="orange", justify=LEFT)
@@ -146,7 +146,7 @@ class BenchMarkView:
     def set_time_label(self):
         self.algorithms_label["text"]="Sorting algorithms ---\n"\
                                       f"\tBubble Sort:   {self.bubble_time}\n"\
-                                      f"\tQuick Sort:     {self.quick_time}\n"\
+                                      f"\tQuick Sort:    {self.quick_time}\n"\
                                       f"\tCocktail Sort: {self.cocktail_time}\n"
 
     def _south_in_center_pane(self):
@@ -158,8 +158,8 @@ class BenchMarkView:
 
     def _info_label(self):
         self.info_label = Label(self.south_in_center_pane, text="Info ---\n"
-                                                                "\tData set sample:\n"
-                                                                "\tElement count: \n"
+                                                                "\tData sample:\n"
+                                                                "\tCount: \n"
                                                                 "\tMin set: \n"
                                                                 "\tMin actual: \n"
                                                                 "\tMax set: \n"
@@ -171,13 +171,13 @@ class BenchMarkView:
 
     def set_info_label(self):
         self.info_label["text"]="Info ---\n"\
-            f"\tData set sample: {self.elements[0:8]}\n"\
-            f"\tElement count: {self.element_count}\n"\
-            f"\tMin set: {self.min_set}\n" \
-            f"\tMin actual: {self.min_actual}\n"\
-            f"\tMax set: {self.max_set}\n" \
-            f"\tMax actual: {self.max_actual}\n"\
-            f"\tBest time: {self.fastest_time}\n"
+            f"\tData sample: {self.elements[0:8]}\n"\
+            f"\tCount:       {self.element_count}\n"\
+            f"\tMin set:     {self.min_set}\n" \
+            f"\tMin actual:  {self.min_actual}\n"\
+            f"\tMax set:     {self.max_set}\n" \
+            f"\tMax actual:  {self.max_actual}\n"\
+            f"\tBest time:   {self.fastest_time}\n"
 
     def set_elements(self, elements):
         self.elements = elements

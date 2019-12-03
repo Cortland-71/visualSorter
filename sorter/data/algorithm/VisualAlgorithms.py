@@ -63,7 +63,6 @@ class VisualAlgorithms:
             time.sleep(.01)
             self.driver.get_controller()._draw_data(working_data)
 
-
             for i in range(start, end):
                 if (working_data[i] > working_data[i + 1]):
                     holder = working_data[i]

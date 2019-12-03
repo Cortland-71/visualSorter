@@ -66,6 +66,7 @@ class Controller:
                                                    self.driver.get_bench_mark_data().get_min_actual())
         self.driver.get_bench_mark_view().set_maxs(self.driver.get_bench_mark_data().get_max_set(),
                                                    self.driver.get_bench_mark_data().get_max_actual())
+        self.driver.get_bench_mark_view().set_element_count(self.driver.get_bench_mark_data().get_count())
         self.driver.get_bench_mark_view().set_fastest_time(self.driver.get_bench_mark_data().get_fastest_time())
         self.driver.get_bench_mark_view().set_info_label()
 
