@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28d0cdac-d2eb-4206-952f-fccdb8dd135c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/sorter/controller/Controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/sorter/controller/Controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorter/data/BenchMarkData.py" beforeDir="false" afterPath="$PROJECT_DIR$/sorter/data/BenchMarkData.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorter/data/algorithm/CocktailSort.py" beforeDir="false" afterPath="$PROJECT_DIR$/sorter/data/algorithm/CocktailSort.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorter/data/algorithm/VisualAlgorithms.py" beforeDir="false" afterPath="$PROJECT_DIR$/sorter/data/algorithm/VisualAlgorithms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorter/view/BenchMarkView.py" beforeDir="false" afterPath="$PROJECT_DIR$/sorter/view/BenchMarkView.py" afterDir="false" />
-    </list>
+    <list default="true" id="28d0cdac-d2eb-4206-952f-fccdb8dd135c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,8 +56,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sorter/controller/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="68" column="104" selection-start-line="68" selection-start-column="104" selection-end-line="68" selection-end-column="104" />
+            <state relative-caret-position="-140">
+              <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="24" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -106,7 +100,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="113" />
     <option name="y" value="-18" />
     <option name="width" value="796" />
@@ -348,8 +342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sorter/controller/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="68" column="104" selection-start-line="68" selection-start-column="104" selection-end-line="68" selection-end-column="104" />
+        <state relative-caret-position="-140">
+          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="24" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
