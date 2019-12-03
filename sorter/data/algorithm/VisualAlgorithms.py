@@ -51,32 +51,27 @@ class VisualAlgorithms:
 
 
     #Cocktail sort
-
     def visual_cocktail_sort(self, data):
         working_data = data
-        n = len(working_data)
-        swapped = True
+        end = len(working_data) -1
         start = 0
-        end = n - 1
-        while (swapped == True):
+        swapped = True
+
+        while swapped:
 
             self.driver.get_view().update()
             time.sleep(.01)
             self.driver.get_controller()._draw_data(working_data)
 
-            swapped = False
 
             for i in range(start, end):
                 if (working_data[i] > working_data[i + 1]):
                     holder = working_data[i]
                     working_data[i] = working_data[i + 1]
                     working_data[i + 1] = holder
-                    swapped = True
+            end -= 1
 
-            if (swapped == False):
-                break
             swapped = False
-            end = end - 1
 
             for i in range(end - 1, start - 1, -1):
                 if (working_data[i] > working_data[i + 1]):
@@ -84,8 +79,9 @@ class VisualAlgorithms:
                     working_data[i] = working_data[i + 1]
                     working_data[i + 1] = holder
                     swapped = True
+            start += 1
 
-
-            start = start + 1
+            if swapped == False:
+                break
 
 

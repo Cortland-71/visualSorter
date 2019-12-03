@@ -22,11 +22,11 @@ class CocktailSort(Thread):
 
 
     def cocktail_sort(self, data):
-        n = len(data)
-        swapped = True
+        end = len(data) -1
         start = 0
-        end = n - 1
-        while (swapped == True):
+        swapped = True
+
+        while (swapped):
 
             swapped = False
 
