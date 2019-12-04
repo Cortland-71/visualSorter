@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28d0cdac-d2eb-4206-952f-fccdb8dd135c" name="Default Changelist" comment="" />
+    <list default="true" id="28d0cdac-d2eb-4206-952f-fccdb8dd135c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/sorter/controller/Controller.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-140">
-              <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="24" />
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="24" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -78,7 +80,7 @@
         <entry file="file://$PROJECT_DIR$/sorter/data/algorithm/VisualAlgorithms.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="444">
-              <caret line="83" column="21" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="83" selection-end-column="21" />
+              <caret line="83" column="21" selection-start-line="54" selection-start-column="8" selection-end-line="83" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -100,7 +102,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="113" />
     <option name="y" value="-18" />
     <option name="width" value="796" />
@@ -236,15 +238,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1764706" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32928178" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33812153" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33812153" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -295,7 +296,7 @@
     <entry file="file://$PROJECT_DIR$/sorter/data/algorithm/VisualAlgorithms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
-          <caret line="83" column="21" lean-forward="true" selection-start-line="54" selection-start-column="8" selection-end-line="83" selection-end-column="21" />
+          <caret line="83" column="21" selection-start-line="54" selection-start-column="8" selection-end-line="83" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -343,7 +344,7 @@
     <entry file="file://$PROJECT_DIR$/sorter/controller/Controller.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-140">
-          <caret line="29" column="24" lean-forward="true" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="24" />
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="24" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
