@@ -1,5 +1,4 @@
 
-from sorter.data.algorithm.BubbleSort import *
 from threading import Thread
 import time
 class CocktailSort(Thread):
