@@ -33,6 +33,3 @@ class BubbleSort(Thread):
                 not_sorted = False
 
 
-
-
-

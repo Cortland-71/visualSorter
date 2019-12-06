@@ -1,6 +1,7 @@
-import time
-from threading import Thread
 
+from sorter.data.algorithm.BubbleSort import *
+from threading import Thread
+import time
 class CocktailSort(Thread):
     def __init__(self, list, driver):
         super().__init__()
@@ -28,23 +29,20 @@ class CocktailSort(Thread):
         swapped = True
 
         while swapped:
-
             for i in range(start, end):
-                if (working_data[i] > working_data[i + 1]):
-                    holder = working_data[i]
-                    working_data[i] = working_data[i + 1]
-                    working_data[i + 1] = holder
+                self.bubble_condition(working_data, i)
             end -= 1
-
             swapped = False
-
             for i in range(end - 1, start - 1, -1):
-                if (working_data[i] > working_data[i + 1]):
-                    holder = working_data[i]
-                    working_data[i] = working_data[i + 1]
-                    working_data[i + 1] = holder
-                    swapped = True
+                self.bubble_condition(working_data, i)
+                swapped = True
             start += 1
-
             if swapped == False:
                 break
+
+    def bubble_condition(self, working_data, i):
+        if (working_data[i] > working_data[i + 1]):
+            holder = working_data[i]
+            working_data[i] = working_data[i + 1]
+            working_data[i + 1] = holder
+
